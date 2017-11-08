@@ -1,0 +1,21 @@
+{
+  "name": "wallapp",
+  "version": "1.0.0",
+  "devDependencies": {
+    "json-server": "^0.11.2",
+    "prettier": "1.7.4"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "axios": "^0.17.0",
+    "concurrently": "^3.5.0",
+    "moment": "^2.19.1",
+    "mongoose": "^4.13.0",
+    "nodemon": "^1.12.1"
+  }
+}
